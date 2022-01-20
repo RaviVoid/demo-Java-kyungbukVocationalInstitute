@@ -7,7 +7,7 @@ public class Method {
 
 	public static void aaa() {//aaa함수
 		System.out.println("aaa()함수가 호출되었습니다.");
-		bbb(); 
+		bbb();  
 		/* method(function)
 	       * 함수정의
 	       * 접근지정자 public 
