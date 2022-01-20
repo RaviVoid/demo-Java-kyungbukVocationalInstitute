@@ -12,7 +12,7 @@ public class Client {
     final static int SERVER_PORT = 1225;
     //사용하지 않는 포트를 써야한다. 아닐경우 충돌 발생
     //실행:"cmd"에서 "netstat -nao"입력해서 사용중인 포트&아이디 확인
-    final static String MESSAGE_TO_SERVER = "안녕,니가 서버냐?";
+    final static String MESSAGE_TO_SERVER = "안녕,넌 몇번이냐?";
      
     public static void main(String[] args) {
          

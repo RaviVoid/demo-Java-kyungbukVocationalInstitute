@@ -8,7 +8,7 @@ public class Server extends Thread {
 
 	final static int SERVER_PORT = 1225;
 	// 클라이언트와 서버의 포트는 반드시 일치해야함
-	final static String MESSAGE_TO_SERVER = "왔냐,클라~반갑당!";
+	final static String MESSAGE_TO_SERVER = "왔냐,내가 4번이다!";
 
 	public static void main(String[] args) {
 
