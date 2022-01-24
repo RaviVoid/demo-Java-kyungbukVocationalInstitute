@@ -1,6 +1,6 @@
 /**
- * Á¦¾î¹® ¼ºÀûÃ³¸®ÇÁ·Î±×·¥À» ÀÛ¼ºÇÏ½Ã¿À. ÃëµæÁ¡¼ö°¡ 90Á¡ÀÌ»óÀÌ¸é A, 80Á¡ÀÌ»óÀÌ¸é B, 70Á¡ÀÌ»óÀÌ¸é C 70Á¡ ¹Ì¸¸ÀÌ¸é F ¸¦
- * Ãâ·ÂÇÏ½Ã¿À. ¿¹ : ³ªÀÇÁ¡¼ö°¡ 59Á¡ÀÌ¸é F°¡ Ãâ·ÂµË´Ï´Ù. if, switch¸¦ ÀÌ¿ëÇÏ¿© °¢°¢ ÇÁ·Î±×·¥ÇÏ½Ã¿À.
+ * ì œì–´ë¬¸ ì„±ì ì²˜ë¦¬í”„ë¡œê·¸ë¨ì„ ì‘ì„±í•˜ì‹œì˜¤. ì·¨ë“ì ìˆ˜ê°€ 90ì ì´ìƒì´ë©´ A, 80ì ì´ìƒì´ë©´ B, 70ì ì´ìƒì´ë©´ C 70ì  ë¯¸ë§Œì´ë©´ F ë¥¼
+ * ì¶œë ¥í•˜ì‹œì˜¤. ì˜ˆ : ë‚˜ì˜ì ìˆ˜ê°€ 59ì ì´ë©´ Fê°€ ì¶œë ¥ë©ë‹ˆë‹¤. if, switchë¥¼ ì´ìš©í•˜ì—¬ ê°ê° í”„ë¡œê·¸ë¨í•˜ì‹œì˜¤.
  * 
  * @author smart04
  *
@@ -9,42 +9,42 @@ public class ControlFlow3 {
 
 	public static void main(String[] args) {
 		{
-			// ¼ºÀûÃ³¸®ÇÁ·Î±×·¥ if¹®
-			System.out.printf("¼ºÀûÃ³¸®ÇÁ·Î±×·¥ if¹®=====\n");
+			// ì„±ì ì²˜ë¦¬í”„ë¡œê·¸ë¨ ifë¬¸
+			System.out.printf("ì„±ì ì²˜ë¦¬í”„ë¡œê·¸ë¨ ifë¬¸=====\n");
 			{
 				int jumsu = 85;
 				if (jumsu >= 90) {
-					System.out.printf("Á¡¼ö´Â %dÁ¡ ÀÔ´Ï´Ù.\nÇĞÁ¡Àº AÀÔ´Ï´Ù.\n", jumsu);
+					System.out.printf("ì ìˆ˜ëŠ” %dì  ì…ë‹ˆë‹¤.\ní•™ì ì€ Aì…ë‹ˆë‹¤.\n", jumsu);
 				} else if (jumsu >= 80) {
-					System.out.printf("Á¡¼ö´Â %dÁ¡ ÀÔ´Ï´Ù.\nÇĞÁ¡Àº BÀÔ´Ï´Ù.\n", jumsu);
+					System.out.printf("ì ìˆ˜ëŠ” %dì  ì…ë‹ˆë‹¤.\ní•™ì ì€ Bì…ë‹ˆë‹¤.\n", jumsu);
 				} else if (jumsu >= 70) {
-					System.out.printf("Á¡¼ö´Â %dÁ¡ ÀÔ´Ï´Ù.\nÇĞÁ¡Àº CÀÔ´Ï´Ù.\n", jumsu);
+					System.out.printf("ì ìˆ˜ëŠ” %dì  ì…ë‹ˆë‹¤.\ní•™ì ì€ Cì…ë‹ˆë‹¤.\n", jumsu);
 				} else {
-					System.out.printf("Á¡¼ö´Â %dÁ¡ ÀÔ´Ï´Ù.\nÇĞÁ¡Àº FÀÔ´Ï´Ù.\n", jumsu);
+					System.out.printf("ì ìˆ˜ëŠ” %dì  ì…ë‹ˆë‹¤.\ní•™ì ì€ Fì…ë‹ˆë‹¤.\n", jumsu);
 				}
 			}
 		}
 		{
 			{
-				// ¼ºÀûÃ³¸®ÇÁ·Î±×·¥ switch¹®
-				System.out.printf("¼ºÀûÃ³¸®ÇÁ·Î±×·¥ switch¹®=====\n");
+				// ì„±ì ì²˜ë¦¬í”„ë¡œê·¸ë¨ switchë¬¸
+				System.out.printf("ì„±ì ì²˜ë¦¬í”„ë¡œê·¸ë¨ switchë¬¸=====\n");
 				int jumsu = 78;
 				switch (jumsu / 10) {
 				case 10:
-					System.out.printf("Á¡¼ö´Â %dÁ¡ ÀÔ´Ï´Ù.\nÇĞÁ¡Àº AÀÔ´Ï´Ù.\n", jumsu);
+					System.out.printf("ì ìˆ˜ëŠ” %dì  ì…ë‹ˆë‹¤.\ní•™ì ì€ Aì…ë‹ˆë‹¤.\n", jumsu);
 					break;
 				case 9:
-					System.out.printf("Á¡¼ö´Â %dÁ¡ ÀÔ´Ï´Ù.\nÇĞÁ¡Àº AÀÔ´Ï´Ù.\n", jumsu);
+					System.out.printf("ì ìˆ˜ëŠ” %dì  ì…ë‹ˆë‹¤.\ní•™ì ì€ Aì…ë‹ˆë‹¤.\n", jumsu);
 					break;
 				case 8:
-					System.out.printf("Á¡¼ö´Â %dÁ¡ ÀÔ´Ï´Ù.\nÇĞÁ¡Àº BÀÔ´Ï´Ù.\n", jumsu);
+					System.out.printf("ì ìˆ˜ëŠ” %dì  ì…ë‹ˆë‹¤.\ní•™ì ì€ Bì…ë‹ˆë‹¤.\n", jumsu);
 					break;
 				case 7:
-					System.out.printf("Á¡¼ö´Â %dÁ¡ ÀÔ´Ï´Ù.\nÇĞÁ¡Àº CÀÔ´Ï´Ù.\n", jumsu);
+					System.out.printf("ì ìˆ˜ëŠ” %dì  ì…ë‹ˆë‹¤.\ní•™ì ì€ Cì…ë‹ˆë‹¤.\n", jumsu);
 					break;
 
 				default:
-					System.out.printf("Á¡¼ö´Â %dÁ¡ ÀÔ´Ï´Ù.\nÇĞÁ¡Àº FÀÔ´Ï´Ù.\n", jumsu);
+					System.out.printf("ì ìˆ˜ëŠ” %dì  ì…ë‹ˆë‹¤.\ní•™ì ì€ Fì…ë‹ˆë‹¤.\n", jumsu);
 					break;
 				}
 			}

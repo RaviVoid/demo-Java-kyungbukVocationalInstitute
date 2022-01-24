@@ -2,7 +2,7 @@ import java.time.LocalDateTime;
 import java.util.Scanner;
 
 /**
- * Scanner, for¹®, if~else¹® for¹® ¡Ú ¡Ú¡Ú ¡Ú¡Ú¡Ú ¡Ú¡Ú¡Ú¡Ú ¡Ú¡Ú¡Ú¡Ú¡Ú À» Ãâ·ÂÇØº¸¼¼¿ä
+ * Scanner, forë¬¸, if~elseë¬¸ forë¬¸ â˜… â˜…â˜… â˜…â˜…â˜… â˜…â˜…â˜…â˜… â˜…â˜…â˜…â˜…â˜… ì„ ì¶œë ¥í•´ë³´ì„¸ìš”
  * 
  * @author smart04
  *
@@ -10,18 +10,18 @@ import java.util.Scanner;
 public class Loop10_1 {
 
 	public static void main(String[] args) {
-		// ÀüÃ¼º¯¼ö¼±¾ğ=========================
-		int sum = 0;// sum(ÃÑÇÕ)
-		int odd = 0;// odd(È¦¼ö)
-		int even = 0;// even(Â¦¼ö)
-		int start = 0; // start(½ÃÀÛ°ª)
-		int end = 0; // end(Á¾·á°ª)
-		int i = 0, j = 0, k = 0; // ÀÚÁÖ¾²´Â°Íµé ÅëÇÕº¯¼ö¼±¾ğ
+		// ì „ì²´ë³€ìˆ˜ì„ ì–¸=========================
+		int sum = 0;// sum(ì´í•©)
+		int odd = 0;// odd(í™€ìˆ˜)
+		int even = 0;// even(ì§ìˆ˜)
+		int start = 0; // start(ì‹œì‘ê°’)
+		int end = 0; // end(ì¢…ë£Œê°’)
+		int i = 0, j = 0, k = 0; // ìì£¼ì“°ëŠ”ê²ƒë“¤ í†µí•©ë³€ìˆ˜ì„ ì–¸
 		char text = 0;
 
-		System.out.printf("=======ÇÇº¸³ªÄ¡¼ö¿­=======\n");// Á¦¸ñÁÙ
+		System.out.printf("=======í”¼ë³´ë‚˜ì¹˜ìˆ˜ì—´=======\n");// ì œëª©ì¤„
 
-		// A(n+2)=A(n+0)+A(n+1) ÇÇº¸³ªÄ¡¼ö¿­
+		// A(n+2)=A(n+0)+A(n+1) í”¼ë³´ë‚˜ì¹˜ìˆ˜ì—´
 		// 1,1,2,3,5,8,13
 		int m = 0;
 		int n = 1;
@@ -35,21 +35,21 @@ public class Loop10_1 {
 			r++;
 
 		}
-		System.out.printf("\n\n=======´ë¹®ÀÚA~ZÃâ·Â=========\n");// Á¦¸ñÁÙ
+		System.out.printf("\n\n=======ëŒ€ë¬¸ìA~Zì¶œë ¥=========\n");// ì œëª©ì¤„
 		i = 0;
 		while (i <= 25) {
 			text = (char) (i + 'A');
 			System.out.printf(" %c", text);
 			i++;
 		}
-		System.out.printf("\n\n=======¼Ò¹®ÀÚa~zÃâ·Â=========\n");// Á¦¸ñÁÙ
+		System.out.printf("\n\n=======ì†Œë¬¸ìa~zì¶œë ¥=========\n");// ì œëª©ì¤„
 		i = 0;
 		while (i <= 25) {
 			text = (char) (i + 'a');
 			System.out.printf(" %c", text);
 			i++;
 		}
-		System.out.printf("\n\n=======¼Ò¹®ÀÚa~zÃâ·Â=========\n");// Á¦¸ñÁÙ
+		System.out.printf("\n\n=======ì†Œë¬¸ìa~zì¶œë ¥=========\n");// ì œëª©ì¤„
 		i = 'a';
 		while (i <= 'z') {
 			text = (char) i;

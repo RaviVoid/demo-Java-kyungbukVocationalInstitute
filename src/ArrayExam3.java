@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 /**
- * (±¹,¿µ,¼ö,ÃÑÇÕ,Æò±Õ) ¼ºÀûÃ³¸®ÇÁ·Î±×·¥À» ÀÛ¼ºÇÏ½Ã¿À
+ * (êµ­,ì˜,ìˆ˜,ì´í•©,í‰ê· ) ì„±ì ì²˜ë¦¬í”„ë¡œê·¸ëž¨ì„ ìž‘ì„±í•˜ì‹œì˜¤
  * 
  * @author smart04
  *
@@ -10,23 +10,23 @@ public class ArrayExam3 {
 
 	public static void main(String[] args) {
 		/**
-		 * ÂüÁ¶Çü º¯¼ö ¹è¿­ Å¸ÀÔ[] º¯¼ö¸í ; Å¸ÀÔ º¯¼ö¸í[]; int[] j = new int[2]; //2Ä­Â¥¸® °¢4¹ÙÀÌÆ®ÀÇ °ø°£ÀÌ ¸¸µé¾îÁø´Ù
-		 * ¹è¿­Àº °°Àº Å¸ÀÔ¸¸ ÀúÀåÀÌ µÈ´Ù.
-		 * ¹è¿­Àº Å©±â¸¦ ÁöÁ¤ÇÏ¸é ´Ã¸®°Å³ª ÁÙÀÏ ¼ö ¾ø´Ù.
+		 * ì°¸ì¡°í˜• ë³€ìˆ˜ ë°°ì—´ íƒ€ìž…[] ë³€ìˆ˜ëª… ; íƒ€ìž… ë³€ìˆ˜ëª…[]; int[] j = new int[2]; //2ì¹¸ì§œë¦¬ ê°4ë°”ì´íŠ¸ì˜ ê³µê°„ì´ ë§Œë“¤ì–´ì§„ë‹¤
+		 * ë°°ì—´ì€ ê°™ì€ íƒ€ìž…ë§Œ ì €ìž¥ì´ ëœë‹¤.
+		 * ë°°ì—´ì€ í¬ê¸°ë¥¼ ì§€ì •í•˜ë©´ ëŠ˜ë¦¬ê±°ë‚˜ ì¤„ì¼ ìˆ˜ ì—†ë‹¤.
 		 **/
 	
-		//1Â÷¿ø ¹è¿­ ½ÃÀÛ
-		System.out.println("1Â÷¿ø ¹è¿­ ½ÃÀÛ============");
+		//1ì°¨ì› ë°°ì—´ ì‹œìž‘
+		System.out.println("1ì°¨ì› ë°°ì—´ ì‹œìž‘============");
 		int [] arr = {1,2,3,4,5};
 		for (int i = 0; i < arr.length; i++) {
 			System.out.println(arr[i]);
 			
 		}
-		//1Â÷¿ø ¹è¿­ Á¾·á
+		//1ì°¨ì› ë°°ì—´ ì¢…ë£Œ
 			
-		//2Â÷¿ø ¹è¿­ ½ÃÀÛ
-		System.out.println("2Â÷¿ø ¹è¿­ ½ÃÀÛ============");
-		int [][] arr2 = new int [2][3];//¹è¿­ÀÇ ÃÖ´ë Å©±â´Â °ª¿¡¼­ -1À» ÇÑ´Ù
+		//2ì°¨ì› ë°°ì—´ ì‹œìž‘
+		System.out.println("2ì°¨ì› ë°°ì—´ ì‹œìž‘============");
+		int [][] arr2 = new int [2][3];//ë°°ì—´ì˜ ìµœëŒ€ í¬ê¸°ëŠ” ê°’ì—ì„œ -1ì„ í•œë‹¤
 		arr2[0][0] = 1;
 		arr2[0][1] = 2;
 		arr2[0][2] = 3;
@@ -40,7 +40,7 @@ public class ArrayExam3 {
 				System.out.println(arr2[i][j]);
 			}
 		}
-		//2Â÷¿ø ¹è¿­ Á¾·á
+		//2ì°¨ì› ë°°ì—´ ì¢…ë£Œ
 	}
 
 }

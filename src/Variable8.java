@@ -1,7 +1,7 @@
 
-public class Variable8/* Å¬·¡½º */ {
+public class Variable8/* í´ë˜ìŠ¤ */ {
 
-	public static void main/* ¸Ş¼Òµå */(String[] args) {
+	public static void main/* ë©”ì†Œë“œ */(String[] args) {
 		int i = 10;
 		int j = 20;
 		// start
@@ -12,9 +12,9 @@ public class Variable8/* Å¬·¡½º */ {
 
 		// end
 		/*
-		 * i°ªÀº20, j°ªÀº10
+		 * iê°’ì€20, jê°’ì€10
 		 */
-		System.out.println("i°ªÀº " + i);
-		System.out.println("j°ªÀº " + j);
+		System.out.println("iê°’ì€ " + i);
+		System.out.println("jê°’ì€ " + j);
 	}
 }

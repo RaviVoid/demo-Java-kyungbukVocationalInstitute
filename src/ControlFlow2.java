@@ -1,5 +1,5 @@
 /**
- * Á¦¾î¹®
+ * ì œì–´ë¬¸
  * 
  * @author smart04
  *
@@ -7,19 +7,19 @@
 public class ControlFlow2 {
 
 	public static void main(String[] args) {
-		//Switch¹®
-		//Ctrl+SpaceÅ°¸¦ »ç¿ëÇÏ¿© ¹®¹ı±âº»Æ² Ãâ·Â
+		//Switchë¬¸
+		//Ctrl+Spaceí‚¤ë¥¼ ì‚¬ìš©í•˜ì—¬ ë¬¸ë²•ê¸°ë³¸í‹€ ì¶œë ¥
 		int i = 2;
 		
 		switch (i) {
-		case 1: System.out.printf("ÀÔ·ÂÇÑ °ªÀº%dÀÔ´Ï´Ù. ´äÀº1ÀÔ´Ï´Ù",i); break;
-		case 2: System.out.printf("ÀÔ·ÂÇÑ °ªÀº%dÀÔ´Ï´Ù. ´äÀº2ÀÔ´Ï´Ù",i); break;
-		case 3: System.out.printf("ÀÔ·ÂÇÑ °ªÀº%dÀÔ´Ï´Ù. ´äÀº3ÀÔ´Ï´Ù",i); break;
-		case 4: System.out.printf("ÀÔ·ÂÇÑ °ªÀº%dÀÔ´Ï´Ù. ´äÀº4ÀÔ´Ï´Ù",i); break;
-		case 5: System.out.printf("ÀÔ·ÂÇÑ °ªÀº%dÀÔ´Ï´Ù. ´äÀº5ÀÔ´Ï´Ù",i); break;
-		// break; Á¶°ÇÀÌ ¸ÂÀ¸¸é Ãâ·ÂÇÏ°í ºüÁ®³ª¿Í¶ó
+		case 1: System.out.printf("ì…ë ¥í•œ ê°’ì€%dì…ë‹ˆë‹¤. ë‹µì€1ì…ë‹ˆë‹¤",i); break;
+		case 2: System.out.printf("ì…ë ¥í•œ ê°’ì€%dì…ë‹ˆë‹¤. ë‹µì€2ì…ë‹ˆë‹¤",i); break;
+		case 3: System.out.printf("ì…ë ¥í•œ ê°’ì€%dì…ë‹ˆë‹¤. ë‹µì€3ì…ë‹ˆë‹¤",i); break;
+		case 4: System.out.printf("ì…ë ¥í•œ ê°’ì€%dì…ë‹ˆë‹¤. ë‹µì€4ì…ë‹ˆë‹¤",i); break;
+		case 5: System.out.printf("ì…ë ¥í•œ ê°’ì€%dì…ë‹ˆë‹¤. ë‹µì€5ì…ë‹ˆë‹¤",i); break;
+		// break; ì¡°ê±´ì´ ë§ìœ¼ë©´ ì¶œë ¥í•˜ê³  ë¹ ì ¸ë‚˜ì™€ë¼
 		default:
-			System.out.printf("1~5 »çÀÌÀÇ °ªÀÌ ¾Æ´Õ´Ï´Ù.");
+			System.out.printf("1~5 ì‚¬ì´ì˜ ê°’ì´ ì•„ë‹™ë‹ˆë‹¤.");
 			break;
 		}
 	}

@@ -1,5 +1,5 @@
 /**
- * Operator ¿¬»êÀÚ
+ * Operator ì—°ì‚°ì
  * 
  * @author smart04
  *
@@ -7,24 +7,24 @@
 public class Operator4 {
 
 	public static void main(String[] args) {
-		// Áõ°¨¿¬»êÀÚ ++, --
+		// ì¦ê°ì—°ì‚°ì ++, --
 		{
 			int i = 0;
 			i = i + 1;
 			i = i + 1;
-			System.out.println("Áõ°¨¿¬»êÀÚ");
+			System.out.println("ì¦ê°ì—°ì‚°ì");
 			System.out.println("i + 1 = " + (i));
 		}
 		{
 			int i = 0;
 			i++;
-			i++;// ÈÄÀ§¿¬»êÀÚ
+			i++;// í›„ìœ„ì—°ì‚°ì
 			System.out.println("i++ = " + (i));
 		}
 		{
 			int i = 0;
-			i++;// ÈÄÀ§¿¬»êÀÚ
-			++i;// ÀüÀ§¿¬»êÀÚ
+			i++;// í›„ìœ„ì—°ì‚°ì
+			++i;// ì „ìœ„ì—°ì‚°ì
 			System.out.println("++i = " + (i));
 		}
 		{
@@ -38,33 +38,33 @@ public class Operator4 {
 
 		}
 		{
-			// ºÎÁ¤¿¬»êÀÚ !(´À³¦Ç¥)
+			// ë¶€ì •ì—°ì‚°ì !(ëŠë‚Œí‘œ)
 			boolean b = false;
-			System.out.println("ºÎÁ¤¿¬»êÀÚ");
+			System.out.println("ë¶€ì •ì—°ì‚°ì");
 			System.out.println(b);
 			System.out.println(!b);
 			System.out.println("==============");
 
 		}
 		{
-			// ºñ±³¿¬»êÀÚ >, >=, <, <=, ==, != °á°ú´Â boolean
+			// ë¹„êµì—°ì‚°ì >, >=, <, <=, ==, != ê²°ê³¼ëŠ” boolean
 			int m = 10, n = 5;
-			System.out.println("ºñ±³¿¬»êÀÚ");
+			System.out.println("ë¹„êµì—°ì‚°ì");
 			System.out.println(m > n);
 			System.out.println(m >= n);
 			System.out.println(m < n);
 			System.out.println(m <= n);
 			System.out.println(m == n);
-			System.out.println(m = n);// ´ëÀÔºÎºĞ¿¬»êÀÌ ±×´ë·Î?
-			System.out.println(m != n);// ¿Ö Æ®·ç°¡ ¾È³ª¿À³ª?
+			System.out.println(m = n);// ëŒ€ì…ë¶€ë¶„ì—°ì‚°ì´ ê·¸ëŒ€ë¡œ?
+			System.out.println(m != n);// ì™œ íŠ¸ë£¨ê°€ ì•ˆë‚˜ì˜¤ë‚˜?
 			System.out.println("==============");
 		}
 		/*
-		 * & : ¾ÚÆÛ¼¾µå(ampersand) | : ¹öÆ¼ÄÃ ¹Ù(Vertical bar)
+		 * & : ì•°í¼ì„¼ë“œ(ampersand) | : ë²„í‹°ì»¬ ë°”(Vertical bar)
 		 */
 		{
-			// ³í¸®¿¬»êÀÚ ( and[&&] , or[||], not[!])
-			System.out.println("³í¸®¿¬»êÀÚ");
+			// ë…¼ë¦¬ì—°ì‚°ì ( and[&&] , or[||], not[!])
+			System.out.println("ë…¼ë¦¬ì—°ì‚°ì");
 			System.out.println(false && false);
 			System.out.println(false && true);
 			System.out.println(true && false);
@@ -81,10 +81,10 @@ public class Operator4 {
 
 		}
 		{
-			// ºñÆ®¿¬»êÀÚ & | ^(xor) ~(not) << >> >>> 0°ú1·Î¸¸µÇ¾îÀÖ´Ù
+			// ë¹„íŠ¸ì—°ì‚°ì & | ^(xor) ~(not) << >> >>> 0ê³¼1ë¡œë§Œë˜ì–´ìˆë‹¤
 			byte bitNum1 = 15;
 			byte bitNum2 = -10;
-			System.out.println("ºñÆ®¿¬»êÀÚ");
+			System.out.println("ë¹„íŠ¸ì—°ì‚°ì");
 			System.out.println(bitNum1 + bitNum2);
 			System.out.println(bitNum1 & bitNum2);
 			System.out.println(bitNum1 | bitNum2);
@@ -93,7 +93,7 @@ public class Operator4 {
 			System.out.println(bitNum2 << 1);
 			System.out.println(bitNum2 >> 1);
 			System.out.println(bitNum2 >>> 1);
-			//ºñºÎÈ£È­ºñÆ® ºñÆ®½ÃÇÁÆ® unsigned
+			//ë¹„ë¶€í˜¸í™”ë¹„íŠ¸ ë¹„íŠ¸ì‹œí”„íŠ¸ unsigned
 			System.out.println("===========");
 
 		}
@@ -101,7 +101,7 @@ public class Operator4 {
 			byte bitNum1 = 0;
 			byte bitNum2 = 1;
 			byte bitNum3 = 2;
-			System.out.println("ºñÆ®À½¼ö¿¬»ê");
+			System.out.println("ë¹„íŠ¸ìŒìˆ˜ì—°ì‚°");
 			System.out.println(bitNum1);
 			System.out.println(bitNum2);
 			System.out.println(bitNum3);

@@ -1,39 +1,39 @@
 /**
- * ¹«ÇÑ·çÇÁ½ÃÅ°±â
+ * ë¬´í•œë£¨í”„ì‹œí‚¤ê¸°
  * @author smart04
  *
  */
 public class Method {
 
-	public static void aaa() {//aaaÇÔ¼ö
-		System.out.println("aaa()ÇÔ¼ö°¡ È£ÃâµÇ¾ú½À´Ï´Ù.");
+	public static void aaa() {//aaaí•¨ìˆ˜
+		System.out.println("aaa()í•¨ìˆ˜ê°€ í˜¸ì¶œë˜ì—ˆìŠµë‹ˆë‹¤.");
 		bbb();
 		/* method(function)
-	       * ÇÔ¼öÁ¤ÀÇ
-	       * Á¢±ÙÁöÁ¤ÀÚ public 
-	       * ¸Ş¸ğ¸®¿¡ ¿Ã¶ó¿ÍÀÖ°í ´©±¸³ª ¾µ ¼ö°¡ ÀÖµµ·Ï ÇØÁÜ static
-	       * ¹İÈ¯°ª void
-	       * ¸Ş¼Òµå¸í main
-	       * ÆÄ¶ó¸ŞÅÍ (String[] args) {
-	       * return; //¹İÈ¯°ªÀÌ ¾øÀ¸¸é ¸®ÅÏ
-	       * return ¹İÈ¯°ª; //¹İÈ¯°ªÀÌ ÀÖÀ¸¸é ¹İÈ¯°ª(void) ºÎºĞÀÌ Å¸ÀÔÀÌ ¹Ù²ï´Ù
-	       * ex) Á¤¼ö¸¦ ¹İÈ¯ÇÏ¸é void¸¦ int·Î ¼öÁ¤
+	       * í•¨ìˆ˜ì •ì˜
+	       * ì ‘ê·¼ì§€ì •ì public 
+	       * ë©”ëª¨ë¦¬ì— ì˜¬ë¼ì™€ìˆê³  ëˆ„êµ¬ë‚˜ ì“¸ ìˆ˜ê°€ ìˆë„ë¡ í•´ì¤Œ static
+	       * ë°˜í™˜ê°’ void
+	       * ë©”ì†Œë“œëª… main
+	       * íŒŒë¼ë©”í„° (String[] args) {
+	       * return; //ë°˜í™˜ê°’ì´ ì—†ìœ¼ë©´ ë¦¬í„´
+	       * return ë°˜í™˜ê°’; //ë°˜í™˜ê°’ì´ ìˆìœ¼ë©´ ë°˜í™˜ê°’(void) ë¶€ë¶„ì´ íƒ€ì…ì´ ë°”ë€ë‹¤
+	       * ex) ì •ìˆ˜ë¥¼ ë°˜í™˜í•˜ë©´ voidë¥¼ intë¡œ ìˆ˜ì •
 	       * 
 	       */
 		
 	}
 	
-	public static void bbb() {//bbbÇÔ¼ö
-		System.out.println("bbb()ÇÔ¼ö°¡ È£ÃâµÇ¾ú½À´Ï´Ù.");
+	public static void bbb() {//bbbí•¨ìˆ˜
+		System.out.println("bbb()í•¨ìˆ˜ê°€ í˜¸ì¶œë˜ì—ˆìŠµë‹ˆë‹¤.");
 		ccc();
 	}
 	
-	public static void ccc() {//cccÇÔ¼ö
-		System.out.println("ccc()ÇÔ¼ö°¡ È£ÃâµÇ¾ú½À´Ï´Ù.");
+	public static void ccc() {//cccí•¨ìˆ˜
+		System.out.println("ccc()í•¨ìˆ˜ê°€ í˜¸ì¶œë˜ì—ˆìŠµë‹ˆë‹¤.");
 		aaa();
 	}
 	
-	public static void main(String[] args) {// ¸ŞÀÎ¸Ş¼Òµå
+	public static void main(String[] args) {// ë©”ì¸ë©”ì†Œë“œ
 		aaa();
 	}
 	

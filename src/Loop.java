@@ -1,6 +1,6 @@
 /**
- * ¹Ýº¹¹® for¹® for(ÃÊ±â°ª;Á¶°Ç¹®;Áõ°¨½Ä){¼öÇà¹®} while¹® {ÃÊ±â°ª; while(Á¶°Ç¹®){¼öÇà¹®;Áõ°¨½Ä} do~while¹®
- * ÃÊ±â°ª; do{¼öÇà¹®;Áõ°¨½Ä(»ý·«°¡´É);}while(Á¶°Ç¹®); do~while¹®Àº ³¡¿¡ ";"¼¼¹ÌÄÝ·ÐÀÌ ºÙ´Â´Ù
+ * ë°˜ë³µë¬¸ forë¬¸ for(ì´ˆê¸°ê°’;ì¡°ê±´ë¬¸;ì¦ê°ì‹){ìˆ˜í–‰ë¬¸} whileë¬¸ {ì´ˆê¸°ê°’; while(ì¡°ê±´ë¬¸){ìˆ˜í–‰ë¬¸;ì¦ê°ì‹} do~whileë¬¸
+ * ì´ˆê¸°ê°’; do{ìˆ˜í–‰ë¬¸;ì¦ê°ì‹(ìƒëžµê°€ëŠ¥);}while(ì¡°ê±´ë¬¸); do~whileë¬¸ì€ ëì— ";"ì„¸ë¯¸ì½œë¡ ì´ ë¶™ëŠ”ë‹¤
  * 
  * @author smart04
  *
@@ -9,7 +9,7 @@ public class Loop {
 
 	public static void main(String[] args) {
 		{
-			for (int i = 0; i < 10; i++) { // ÃÊ±â°ªÀº ÀÏ¹ÝÀûÀ¸·Î 0À» ¾´´Ù
+			for (int i = 0; i < 10; i++) { // ì´ˆê¸°ê°’ì€ ì¼ë°˜ì ìœ¼ë¡œ 0ì„ ì“´ë‹¤
 				System.out.println(i + 1);
 			}
 			for (int i = 0; i < args.length; i++) {
@@ -17,12 +17,12 @@ public class Loop {
 			}
 		}
 		{
-			for (int i = 1; i <= 10; i++) { // ÃÊ±â°ªÀº ÀÏ¹ÝÀûÀ¸·Î 0À» ¾´´Ù
+			for (int i = 1; i <= 10; i++) { // ì´ˆê¸°ê°’ì€ ì¼ë°˜ì ìœ¼ë¡œ 0ì„ ì“´ë‹¤
 				System.out.println(i);
 			}
 		}
 		{
-			for (int i = 10; i >= 1; i--) { // ÃÊ±â°ªÀº ÀÏ¹ÝÀûÀ¸·Î 0À» ¾´´Ù
+			for (int i = 10; i >= 1; i--) { // ì´ˆê¸°ê°’ì€ ì¼ë°˜ì ìœ¼ë¡œ 0ì„ ì“´ë‹¤
 				System.out.println(i);
 			}
 		}

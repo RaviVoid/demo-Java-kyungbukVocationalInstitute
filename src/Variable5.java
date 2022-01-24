@@ -1,8 +1,8 @@
 
-public class Variable5/* Å¬·¡½º */ {
+public class Variable5/* í´ë˜ìŠ¤ */ {
 
-	public static void main/* ¸Ş¼Òµå */(String[] args) {
-		double d = 10.0; //»ó¼öÇ¥±âÇüÅÂ¿¡ µû¶ó¼­ int°¡ µÉ¼öÀÖ°í double°¡ µÉ¼öÀÖ´Ù
+	public static void main/* ë©”ì†Œë“œ */(String[] args) {
+		double d = 10.0; //ìƒìˆ˜í‘œê¸°í˜•íƒœì— ë”°ë¼ì„œ intê°€ ë ìˆ˜ìˆê³  doubleê°€ ë ìˆ˜ìˆë‹¤
 		int i = (int) d;
 		System.out.println(d);
 	}

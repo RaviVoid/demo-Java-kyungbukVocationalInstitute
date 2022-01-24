@@ -2,7 +2,7 @@ import java.time.LocalDateTime;
 import java.util.Scanner;
 
 /**
- * Scanner, for¹®, if~else¹® 1ºÎÅÍ 10±îÁöÀÇ È¦¼öÇÕ, Â¦¼öÇÕ, ÃÑÇÕÀ» Ãâ·ÂÇØº¸¼¼¿ä
+ * Scanner, forë¬¸, if~elseë¬¸ 1ë¶€í„° 10ê¹Œì§€ì˜ í™€ìˆ˜í•©, ì§ìˆ˜í•©, ì´í•©ì„ ì¶œë ¥í•´ë³´ì„¸ìš”
  * 
  * @author smart04
  *
@@ -10,38 +10,38 @@ import java.util.Scanner;
 public class Loop8 {
 
 	public static void main(String[] args) {
-		// ÀüÃ¼º¯¼ö¼±¾ğ=========================
-		int sum = 0;// sum(ÃÑÇÕ)
-		int odd = 0;// odd(È¦¼ö)
-		int even = 0;// even(Â¦¼ö)
-		int start = 0; // start(½ÃÀÛ°ª)
-		int end = 0; // end(Á¾·á°ª)
+		// ì „ì²´ë³€ìˆ˜ì„ ì–¸=========================
+		int sum = 0;// sum(ì´í•©)
+		int odd = 0;// odd(í™€ìˆ˜)
+		int even = 0;// even(ì§ìˆ˜)
+		int start = 0; // start(ì‹œì‘ê°’)
+		int end = 0; // end(ì¢…ë£Œê°’)
 
-		// ==================================½ÃÀÛ°ª ÀÔ·Â
-		Scanner scan = new Scanner(System.in); // °ªÀ» ÀÔ·Â¹Ş´Â ÇÔ¼ö Scan
-		System.out.println("¾Æ·¡¿¡ Ä¿¼­¸¦ µÎ°í ½ÃÀÛ°ªÀ» ÀÔ·ÂÇÏ¼¼¿ä.");
+		// ==================================ì‹œì‘ê°’ ì…ë ¥
+		Scanner scan = new Scanner(System.in); // ê°’ì„ ì…ë ¥ë°›ëŠ” í•¨ìˆ˜ Scan
+		System.out.println("ì•„ë˜ì— ì»¤ì„œë¥¼ ë‘ê³  ì‹œì‘ê°’ì„ ì…ë ¥í•˜ì„¸ìš”.");
 		start = scan.nextInt();
 
-		// ==================================Á¾·á°ª ÀÔ·Â
-		System.out.println("¾Æ·¡¿¡ Ä¿¼­¸¦ µÎ°í Á¾·á°ªÀ» ÀÔ·ÂÇÏ¼¼¿ä.");
+		// ==================================ì¢…ë£Œê°’ ì…ë ¥
+		System.out.println("ì•„ë˜ì— ì»¤ì„œë¥¼ ë‘ê³  ì¢…ë£Œê°’ì„ ì…ë ¥í•˜ì„¸ìš”.");
 		end = scan.nextInt();
 
-		// ==================================Â¦È¦¼öÇÕ
-		// È¦Â¦°ËÃâ Á¶°Ç¹® ½ÃÀÛ-----------
+		// ==================================ì§í™€ìˆ˜í•©
+		// í™€ì§ê²€ì¶œ ì¡°ê±´ë¬¸ ì‹œì‘-----------
 		for (int i = start; i <= end; i++) {
-			if (i % 2 == 0) {// Â¦¼öÀÎ°¡?
-				even += i; // even = even + i;// Â¦¼ö¸¸´õÇØ¶ó
-			} else {// È¦¼öÀÎ°¡?
-				odd += i; // odd = odd + i;// È¦¼ö¸¸´õÇØ¶ó
+			if (i % 2 == 0) {// ì§ìˆ˜ì¸ê°€?
+				even += i; // even = even + i;// ì§ìˆ˜ë§Œë”í•´ë¼
+			} else {// í™€ìˆ˜ì¸ê°€?
+				odd += i; // odd = odd + i;// í™€ìˆ˜ë§Œë”í•´ë¼
 			}
 		}
-		// È¦Â¦°ËÃâ Á¶°Ç¹® Á¾·á-----------
+		// í™€ì§ê²€ì¶œ ì¡°ê±´ë¬¸ ì¢…ë£Œ-----------
 
-		sum = odd + even;// sum=È¦¼ö+Â¦¼ö
+		sum = odd + even;// sum=í™€ìˆ˜+ì§ìˆ˜
 
-		// ==================================Ãâ·Â¹®
-		System.out.println("ÃÑÇÕ:" + sum);
-		System.out.println("È¦¼öÇÕ:" + odd);
-		System.out.println("Â¦¼öÇÕ:" + even);
+		// ==================================ì¶œë ¥ë¬¸
+		System.out.println("ì´í•©:" + sum);
+		System.out.println("í™€ìˆ˜í•©:" + odd);
+		System.out.println("ì§ìˆ˜í•©:" + even);
 	}
 }

@@ -1,12 +1,12 @@
 
-public class Variable7/* Å¬·¡½º */ {
+public class Variable7/* í´ë˜ìŠ¤ */ {
 
-	public static void main/* ¸Ş¼Òµå */(String[] args) {
+	public static void main/* ë©”ì†Œë“œ */(String[] args) {
 		{
 			System.out.println((byte) 10 + (byte) 200);
 			System.out.println((byte) 10 + (short) 200);
 			System.out.println((byte) 10 + (double) 200.0);
-			// int Å¸ÀÔ ¾Æ·¡¿¡¼­ ´Ù¸¥ °Í³¢¸® ¿¬»êÇÏ¸é Ãâ·ÂÀºint°¡ µÈ´Ù
+			// int íƒ€ì… ì•„ë˜ì—ì„œ ë‹¤ë¥¸ ê²ƒë¼ë¦¬ ì—°ì‚°í•˜ë©´ ì¶œë ¥ì€intê°€ ëœë‹¤
 		}
 		{
 			long b = 10 + 10L;

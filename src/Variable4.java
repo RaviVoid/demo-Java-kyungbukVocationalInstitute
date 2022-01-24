@@ -1,10 +1,10 @@
 
-public class Variable4/* Å¬·¡½º */ {
+public class Variable4/* í´ë˜ìŠ¤ */ {
 
-	public static void main/* ¸Ş¼Òµå */(String[] args) {
+	public static void main/* ë©”ì†Œë“œ */(String[] args) {
 
-		int i/* º¯¼ö¼±¾ğ */ ;
-		/* °ªÃÊ±âÈ­ */ {
+		int i/* ë³€ìˆ˜ì„ ì–¸ */ ;
+		/* ê°’ì´ˆê¸°í™” */ {
 			i = 1;
 		}
 		System.out.println(i);
@@ -12,4 +12,4 @@ public class Variable4/* Å¬·¡½º */ {
 	}
 }
 
-//ºí·Ï
+//ë¸”ë¡

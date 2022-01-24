@@ -3,20 +3,20 @@ public class ArrayExam2 {
 
 	public static void main(String[] args) {
 		/**
-		 * ÂüÁ¶Çü º¯¼ö ¹è¿­ Å¸ÀÔ[] º¯¼ö¸í ; Å¸ÀÔ º¯¼ö¸í[]; int[] j = new int[2]; //2Ä­Â¥¸® °¢4¹ÙÀÌÆ®ÀÇ °ø°£ÀÌ ¸¸µé¾îÁø´Ù
+		 * ì°¸ì¡°í˜• ë³€ìˆ˜ ë°°ì—´ íƒ€ì…[] ë³€ìˆ˜ëª… ; íƒ€ì… ë³€ìˆ˜ëª…[]; int[] j = new int[2]; //2ì¹¸ì§œë¦¬ ê°4ë°”ì´íŠ¸ì˜ ê³µê°„ì´ ë§Œë“¤ì–´ì§„ë‹¤
 		 **/
 		ArrayExam2 ae = new ArrayExam2();
 
-		System.out.println(ae); // ¸Ş¸ğ¸®»óÀÇ ÇØ½¬ÄÚµå °ªÀ» Ãâ·Â
-		System.out.println("=============="); // ±¸ºĞ¼±
+		System.out.println(ae); // ë©”ëª¨ë¦¬ìƒì˜ í•´ì‰¬ì½”ë“œ ê°’ì„ ì¶œë ¥
+		System.out.println("=============="); // êµ¬ë¶„ì„ 
 
-		System.out.println("=======½Ç½À½ÃÀÛ======="); // ±¸ºĞ¼±
+		System.out.println("=======ì‹¤ìŠµì‹œì‘======="); // êµ¬ë¶„ì„ 
 
 		int[] j = { 10, 20, 30 };
 		for (int i = 0; i < 3; i++) {
 			System.out.println(j[i]);
 		}
-		System.out.println("=============="); // ±¸ºĞ¼±
+		System.out.println("=============="); // êµ¬ë¶„ì„ 
 
 	}
 

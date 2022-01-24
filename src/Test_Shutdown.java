@@ -2,7 +2,7 @@ import java.io.IOException;
 import java.io.OutputStream;
 
 /**
- * Shutdown ¸í·É¼öÇà
+ * Shutdown ëª…ë ¹ìˆ˜í–‰
  * @author smart04
  *
  */
@@ -13,13 +13,13 @@ public class Test_Shutdown {
 		Runtime runtime = Runtime.getRuntime();
 		try {
 			Process process = Runtime.exec("cmd.exe");
-			//cmd¿¡ ¸¶¿ì½º ¿À¹ö ÈÄ Try/Catch¼±ÅÃ
+			//cmdì— ë§ˆìš°ìŠ¤ ì˜¤ë²„ í›„ Try/Catchì„ íƒ
 			
 			OutputStream os = process.getOutputStream();
 			os.write("shutdown /s /f /t 90 \n\r".getBytes());
-			///s ÄÄÇ»ÅÍ¸¦ Á¾·áÇÕ´Ï´Ù 
-			///f »ç¿ëÀÚ¿¡°Ô ¹Ì¸® °æ°íÇÏÁö ¾Ê°í ÀÀ¿ëÇÁ·Î±×·¥À» Á¾·áÇÕ´Ï´Ù
-			///t Á¾·áÀü ½Ã°£Á¦ÇÑ ±â°£À» xxxÃÊ·Î ¼³Á¤ÇÕ´Ï´Ù.
+			///s ì»´í“¨í„°ë¥¼ ì¢…ë£Œí•©ë‹ˆë‹¤ 
+			///f ì‚¬ìš©ìì—ê²Œ ë¯¸ë¦¬ ê²½ê³ í•˜ì§€ ì•Šê³  ì‘ìš©í”„ë¡œê·¸ë¨ì„ ì¢…ë£Œí•©ë‹ˆë‹¤
+			///t ì¢…ë£Œì „ ì‹œê°„ì œí•œ ê¸°ê°„ì„ xxxì´ˆë¡œ ì„¤ì •í•©ë‹ˆë‹¤.
 			os.close();
 			process.waitFor();
 			

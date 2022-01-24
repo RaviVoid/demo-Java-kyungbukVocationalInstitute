@@ -3,9 +3,9 @@ public class Bus {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println("±â»ç¾ÆÀú¾¾ ´Ş·Á~!");
-		System.out.printf("\n\n\n\n"); //Â÷¼±¹Ù²Ù±â
-		System.out.println("±â»ç¾ÆÀú¾¾ ¶Ç ´Ş·Á~!");
+		System.out.println("ê¸°ì‚¬ì•„ì €ì”¨ ë‹¬ë ¤~!");
+		System.out.printf("\n\n\n\n"); //ì°¨ì„ ë°”ê¾¸ê¸°
+		System.out.println("ê¸°ì‚¬ì•„ì €ì”¨ ë˜ ë‹¬ë ¤~!");
 	}
 
 }

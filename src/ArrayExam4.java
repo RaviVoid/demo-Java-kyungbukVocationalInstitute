@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 /**
- * (±¹,¿µ,¼ö,ÃÑÇÕ,Æò±Õ) ¼ºÀûÃ³¸®ÇÁ·Î±×·¥À» ÀÛ¼ºÇÏ½Ã¿À
+ * (êµ­,ì˜,ìˆ˜,ì´í•©,í‰ê· ) ì„±ì ì²˜ë¦¬í”„ë¡œê·¸ë¨ì„ ì‘ì„±í•˜ì‹œì˜¤
  * 
  * @author smart04
  *
@@ -10,15 +10,15 @@ public class ArrayExam4 {
 
 	public static void main(String[] args) {
 		/**
-		 * ÂüÁ¶Çü º¯¼ö ¹è¿­ Å¸ÀÔ[] º¯¼ö¸í ; Å¸ÀÔ º¯¼ö¸í[]; int[] j = new int[2]; //2Ä­Â¥¸® °¢4¹ÙÀÌÆ®ÀÇ °ø°£ÀÌ ¸¸µé¾îÁø´Ù
+		 * ì°¸ì¡°í˜• ë³€ìˆ˜ ë°°ì—´ íƒ€ì…[] ë³€ìˆ˜ëª… ; íƒ€ì… ë³€ìˆ˜ëª…[]; int[] j = new int[2]; //2ì¹¸ì§œë¦¬ ê°4ë°”ì´íŠ¸ì˜ ê³µê°„ì´ ë§Œë“¤ì–´ì§„ë‹¤
 		 **/
 	
 		ArrayExam4 ae = new ArrayExam4();
 
-		System.out.println(ae); // ¸Ş¸ğ¸®»óÀÇ ÇØ½¬ÄÚµå °ªÀ» Ãâ·Â
-		System.out.println("=============="); // ±¸ºĞ¼±
+		System.out.println(ae); // ë©”ëª¨ë¦¬ìƒì˜ í•´ì‰¬ì½”ë“œ ê°’ì„ ì¶œë ¥
+		System.out.println("=============="); // êµ¬ë¶„ì„ 
 
-		System.out.println("=======½Ç½À½ÃÀÛ======="); // ±¸ºĞ¼±
+		System.out.println("=======ì‹¤ìŠµì‹œì‘======="); // êµ¬ë¶„ì„ 
 
 		int kor = 0;
 		int eng = 0;
@@ -26,41 +26,41 @@ public class ArrayExam4 {
 		int total = 0;
 		double avg = 0.0;
 
-		kor = 50; // ±¹¾îÁ¡¼ö ÀÔ·Â
-		eng = 80; // ¿µ¾îÁ¡¼ö ÀÔ·Â
-		math = 90; // ¼öÇĞÁ¡¼ö ÀÔ·Â
+		kor = 50; // êµ­ì–´ì ìˆ˜ ì…ë ¥
+		eng = 80; // ì˜ì–´ì ìˆ˜ ì…ë ¥
+		math = 90; // ìˆ˜í•™ì ìˆ˜ ì…ë ¥
 
 		total = kor + eng + math;
 		avg = total / 3;
-		System.out.printf("±¹¾î:%d, ¿µ¾î:%d, ¼öÇĞ:%d\n", kor, eng, math);
-		System.out.printf("ÃÑÁ¡:%d, Æò±Õ:%f\n", total, avg);
-		System.out.println("=============="); // ±¸ºĞ¼±
+		System.out.printf("êµ­ì–´:%d, ì˜ì–´:%d, ìˆ˜í•™:%d\n", kor, eng, math);
+		System.out.printf("ì´ì :%d, í‰ê· :%f\n", total, avg);
+		System.out.println("=============="); // êµ¬ë¶„ì„ 
 
-		System.out.println("=======¹è¿­½Ç½À½ÃÀÛ======="); // ±¸ºĞ¼±
+		System.out.println("=======ë°°ì—´ì‹¤ìŠµì‹œì‘======="); // êµ¬ë¶„ì„ 
 
-		System.out.println("Å°º¸µå ÀÔ·ÂÀ» ±â´Ù¸³´Ï´Ù.");
-		Scanner scan = new Scanner(System.in); // Å°º¸µå ÀÔ·ÂÀ» ¹Ş´Â´Ù.
+		System.out.println("í‚¤ë³´ë“œ ì…ë ¥ì„ ê¸°ë‹¤ë¦½ë‹ˆë‹¤.");
+		Scanner scan = new Scanner(System.in); // í‚¤ë³´ë“œ ì…ë ¥ì„ ë°›ëŠ”ë‹¤.
 		
 		
 		
 		int[] grade = new int[5];
 		double[] gradeAvg = new double[1];
-		System.out.println("±¹¾î¼ºÀûÀ» ÀÔ·ÂÇÏ¼¼¿ä?");
+		System.out.println("êµ­ì–´ì„±ì ì„ ì…ë ¥í•˜ì„¸ìš”?");
 		grade[0] = scan.nextInt();
-		System.out.println("¿µ¾î¼ºÀûÀ» ÀÔ·ÂÇÏ¼¼¿ä?");
+		System.out.println("ì˜ì–´ì„±ì ì„ ì…ë ¥í•˜ì„¸ìš”?");
 		grade[1] = scan.nextInt();
-		System.out.println("¼öÇĞ¼ºÀûÀ» ÀÔ·ÂÇÏ¼¼¿ä?");
+		System.out.println("ìˆ˜í•™ì„±ì ì„ ì…ë ¥í•˜ì„¸ìš”?");
 		grade[2] = scan.nextInt();
 		grade[3] = grade[0] + grade[1] + grade[2];
 		grade[4] = grade[3] / 3;
 		gradeAvg[0] = grade[3] / 3;
-		System.out.printf("±¹¾î:%d, ¿µ¾î:%d, ¼öÇĞ:%d\n", grade[0], grade[1], grade[2]);
-		System.out.printf("ÃÑÁ¡:%d, Æò±Õ:%d\n", grade[3], grade[4]);
-		System.out.printf("Æò±Õ:%f\n", gradeAvg[0]);
-		System.out.println("=============="); // ±¸ºĞ¼±
+		System.out.printf("êµ­ì–´:%d, ì˜ì–´:%d, ìˆ˜í•™:%d\n", grade[0], grade[1], grade[2]);
+		System.out.printf("ì´ì :%d, í‰ê· :%d\n", grade[3], grade[4]);
+		System.out.printf("í‰ê· :%f\n", gradeAvg[0]);
+		System.out.println("=============="); // êµ¬ë¶„ì„ 
 
-		System.out.println("=======¹è¿­½Ç½À½ÃÀÛ======="); // ±¸ºĞ¼±
-		System.out.println("ÇØ´ç¹è¿­ÀÇ ±æÀÌ´Â = " + grade.length); // ÇØ´ç ¹è¿­ÀÇ ±æÀÌ¸¦ ¾Ë ¼ö ÀÖ´Ù
+		System.out.println("=======ë°°ì—´ì‹¤ìŠµì‹œì‘======="); // êµ¬ë¶„ì„ 
+		System.out.println("í•´ë‹¹ë°°ì—´ì˜ ê¸¸ì´ëŠ” = " + grade.length); // í•´ë‹¹ ë°°ì—´ì˜ ê¸¸ì´ë¥¼ ì•Œ ìˆ˜ ìˆë‹¤
 
 	}
 

@@ -1,5 +1,5 @@
 /**
- * Operator ¿¬»êÀÚ
+ * Operator ì—°ì‚°ì
  * 
  * @author smart04
  *
@@ -7,13 +7,13 @@
 public class Operator2 {
 
 	public static void main(String[] args) {
-		//»ê¼ú¿¬»êÀÚ +, -, *, /, % (´õÇÏ±â,»©±â,°öÇÏ±â,³ª´©±â,³ª¸ÓÁö°ª)
+		//ì‚°ìˆ ì—°ì‚°ì +, -, *, /, % (ë”í•˜ê¸°,ë¹¼ê¸°,ê³±í•˜ê¸°,ë‚˜ëˆ„ê¸°,ë‚˜ë¨¸ì§€ê°’)
 		{
 		double i = 10;
 		int j = 3;
 		
 		System.out.println("i + j = " + (i + j));
-		//¿ì¼±¼øÀ§·Î °ıÈ£¸¦ ÁÖ¾î¼­ ½ÇÇàÇÏµµ·Ï ÇÑ´Ù
+		//ìš°ì„ ìˆœìœ„ë¡œ ê´„í˜¸ë¥¼ ì£¼ì–´ì„œ ì‹¤í–‰í•˜ë„ë¡ í•œë‹¤
 		System.out.println("i + j = " + i + j);
 		System.out.println("i - j = " + (i - j));
 		System.out.println("i * j = " + (i * j));
@@ -23,7 +23,7 @@ public class Operator2 {
 		double i = 10;
 		int j = 3;
 		
-		System.out.printf/* ¸Ş¼Òµå */("%f + %d = %2.2f", i, j, i+j);
+		System.out.printf/* ë©”ì†Œë“œ */("%f + %d = %2.2f", i, j, i+j);
 		System.out.println(i-j);
 		System.out.println(i*j);
 		System.out.println(i/j);

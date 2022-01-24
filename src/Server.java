@@ -7,19 +7,19 @@ import java.net.Socket;
 public class Server extends Thread {
 
 	final static int SERVER_PORT = 1225;
-	// Å¬¶óÀÌ¾ğÆ®¿Í ¼­¹öÀÇ Æ÷Æ®´Â ¹İµå½Ã ÀÏÄ¡ÇØ¾ßÇÔ
-	final static String MESSAGE_TO_SERVER = "¿Ô³Ä,³»°¡ 4¹øÀÌ´Ù!";
+	// í´ë¼ì´ì–¸íŠ¸ì™€ ì„œë²„ì˜ í¬íŠ¸ëŠ” ë°˜ë“œì‹œ ì¼ì¹˜í•´ì•¼í•¨
+	final static String MESSAGE_TO_SERVER = "ì™”ëƒ,ë‚´ê°€ 4ë²ˆì´ë‹¤!";
 
 	public static void main(String[] args) {
 
 		ServerSocket serverSocket = null;
-		// ¼­¹ö ¼ÒÄÏÀ» ¼±¾ğÇÔ. ¸¸µé¾îÁöÁö´Â ¾ÊÀ½
+		// ì„œë²„ ì†Œì¼“ì„ ì„ ì–¸í•¨. ë§Œë“¤ì–´ì§€ì§€ëŠ” ì•ŠìŒ
 
 		try {
 			serverSocket = new ServerSocket(SERVER_PORT);
-			// »ó¼ö¿¡ ¸¶¿ì½º¸¦ ¿Ã¸®¸é surround with try/catchÀÛ¼º°¡´É
-			// ¼ÒÄÏÀ» ¸¸µé°Ú´Ù, ¼ÒÄÏÀ» ¿­¾úÀ½
-			// try = ¿¹¿ÜÃ³¸®, Åë½ÅÀÌ ¾ÈµÉ ¼öµµ ÀÖÀ¸¹Ç·Î ÀÛ¼º
+			// ìƒìˆ˜ì— ë§ˆìš°ìŠ¤ë¥¼ ì˜¬ë¦¬ë©´ surround with try/catchì‘ì„±ê°€ëŠ¥
+			// ì†Œì¼“ì„ ë§Œë“¤ê² ë‹¤, ì†Œì¼“ì„ ì—´ì—ˆìŒ
+			// try = ì˜ˆì™¸ì²˜ë¦¬, í†µì‹ ì´ ì•ˆë  ìˆ˜ë„ ìˆìœ¼ë¯€ë¡œ ì‘ì„±
 
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -27,39 +27,39 @@ public class Server extends Thread {
 
 		try {
 			while (true) {
-				System.out.println("socket ¿¬°á ´ë±â");
+				System.out.println("socket ì—°ê²° ëŒ€ê¸°");
 				Socket socket = serverSocket.accept();
-				System.out.println("host : " + socket.getInetAddress() + " | Åë½Å ¿¬°á ¼º°ø");
+				System.out.println("host : " + socket.getInetAddress() + " | í†µì‹  ì—°ê²° ì„±ê³µ");
 
-				//Read/WriteÇÏ´Â ºÎºĞ ½ÃÀÛ===================================
-				/** Server¿¡¼­ º¸³½ °ªÀ» ¹Ş±â À§ÇÑ Åë·Î */
+				//Read/Writeí•˜ëŠ” ë¶€ë¶„ ì‹œì‘===================================
+				/** Serverì—ì„œ ë³´ë‚¸ ê°’ì„ ë°›ê¸° ìœ„í•œ í†µë¡œ */
 				InputStream is = socket.getInputStream();
-				// °´Ã¼¸¦ ¸¸µé¶§´Â ¾ÕÂÊ¿¡¼­ ´ë¹®ÀÚ¸¦ µû¿Â´Ù IS
+				// ê°ì²´ë¥¼ ë§Œë“¤ë•ŒëŠ” ì•ìª½ì—ì„œ ëŒ€ë¬¸ìë¥¼ ë”°ì˜¨ë‹¤ IS
 
-				/** Server¿¡¼­ Client·Î º¸³»±â À§ÇÑ Åë·Î */
+				/** Serverì—ì„œ Clientë¡œ ë³´ë‚´ê¸° ìœ„í•œ í†µë¡œ */
 				OutputStream os = socket.getOutputStream();
 
 				byte[] data = new byte[16];
-				// 16ÀÚ¸® ¹öÆÛ¸¦ ¸¸µé°Ú´Ù. 16°³¾¿ ÇÑ¹ø¿¡ ¿Å±â°Ú´Ù.
+				// 16ìë¦¬ ë²„í¼ë¥¼ ë§Œë“¤ê² ë‹¤. 16ê°œì”© í•œë²ˆì— ì˜®ê¸°ê² ë‹¤.
 
 				int n = is.read(data);
-				// ¼­¹ö·Î º¸³»ÁØ µ¥ÀÌÅÍ¸¦ ÀĞ´Â´Ù.
+				// ì„œë²„ë¡œ ë³´ë‚´ì¤€ ë°ì´í„°ë¥¼ ì½ëŠ”ë‹¤.
 
 				final String messageFromClient = new String(data, 0, n);
-				//0ºÎÅÍ n(16)±îÁö ÀĞ°Ú´Ù.
+				//0ë¶€í„° n(16)ê¹Œì§€ ì½ê² ë‹¤.
 
 				System.out.println(messageFromClient);
 
 				os.write(MESSAGE_TO_SERVER.getBytes());
-				//¹ÙÀÌÆ®ÀÇ ¹è¿­À» ³Ö´Â °÷. ½ºÆ®¸²À» ¹ÙÀÌÆ®ÀÇ ¹è¿­·Î ³Ö´Â´Ù.
+				//ë°”ì´íŠ¸ì˜ ë°°ì—´ì„ ë„£ëŠ” ê³³. ìŠ¤íŠ¸ë¦¼ì„ ë°”ì´íŠ¸ì˜ ë°°ì—´ë¡œ ë„£ëŠ”ë‹¤.
 				
 				os.flush();
 
 				is.close();
-				//½ºÆ®¸²À» ´İ¾ÆÁØ´Ù
+				//ìŠ¤íŠ¸ë¦¼ì„ ë‹«ì•„ì¤€ë‹¤
 				os.close();
-				//½ºÆ®¸²À» ´İ¾ÆÁØ´Ù
-				//Read/WriteÇÏ´Â ºÎºĞ Á¾·á===================================
+				//ìŠ¤íŠ¸ë¦¼ì„ ë‹«ì•„ì¤€ë‹¤
+				//Read/Writeí•˜ëŠ” ë¶€ë¶„ ì¢…ë£Œ===================================
 				
 				socket.close();
 			}

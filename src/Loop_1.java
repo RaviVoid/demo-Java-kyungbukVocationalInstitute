@@ -2,7 +2,7 @@ import java.time.LocalDateTime;
 import java.util.Scanner;
 
 /**
- * for¹® 1ºÎÅÍ 10±îÁö Ãâ·ÂÇÏ¼¼¿ä
+ * forë¬¸ 1ë¶€í„° 10ê¹Œì§€ ì¶œë ¥í•˜ì„¸ìš”
  * 
  * @author smart04
  *
@@ -10,16 +10,16 @@ import java.util.Scanner;
 public class Loop_1 {
 
 	public static void main(String[] args) {
-		// ÀüÃ¼º¯¼ö¼±¾ð=========================
-		int sum = 0;// sum(ÃÑÇÕ)
-		int odd = 0;// odd(È¦¼ö)
-		int even = 0;// even(Â¦¼ö)
-		int start = 0; // start(½ÃÀÛ°ª)
-		int end = 0; // end(Á¾·á°ª)
-		int i = 0, j = 0, k = 0; // ÀÚÁÖ¾²´Â°Íµé ÅëÇÕº¯¼ö¼±¾ð
+		// ì „ì²´ë³€ìˆ˜ì„ ì–¸=========================
+		int sum = 0;// sum(ì´í•©)
+		int odd = 0;// odd(í™€ìˆ˜)
+		int even = 0;// even(ì§ìˆ˜)
+		int start = 0; // start(ì‹œìž‘ê°’)
+		int end = 0; // end(ì¢…ë£Œê°’)
+		int i = 0, j = 0, k = 0; // ìžì£¼ì“°ëŠ”ê²ƒë“¤ í†µí•©ë³€ìˆ˜ì„ ì–¸
 
-		System.out.printf("=======¼±»ý´Ô²¨=======\n");// Á¦¸ñÁÙ
-		// Á¶°Ç¹® ½ÃÀÛ-----------
+		System.out.printf("=======ì„ ìƒë‹˜êº¼=======\n");// ì œëª©ì¤„
+		// ì¡°ê±´ë¬¸ ì‹œìž‘-----------
 		i = 10;
 		while (i >= 1) {
 			System.out.println(i);

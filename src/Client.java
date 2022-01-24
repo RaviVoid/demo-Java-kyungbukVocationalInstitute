@@ -7,29 +7,29 @@ import java.net.UnknownHostException;
 public class Client {
      
     final static String SERVER_IP = "203.228.62.11";
-    //finalÀº »ó¼ö¸¦ ¸¸µé ¶§ »ç¿ë(°ªÀÌ ÇÑ ¹ø µé¾î°¡¸é °ªÀ» º¯°æÇÒ ¼ö ¾ø´Ù)
-    //»ó¼öÀÇ º¯¼ö¸íÀº ¸ğµÎ ´ë¹®ÀÚ·Î »ç¿ë, ´Ü¾î+´Ü¾î = ´Ü¾î_´Ü¾î
+    //finalì€ ìƒìˆ˜ë¥¼ ë§Œë“¤ ë•Œ ì‚¬ìš©(ê°’ì´ í•œ ë²ˆ ë“¤ì–´ê°€ë©´ ê°’ì„ ë³€ê²½í•  ìˆ˜ ì—†ë‹¤)
+    //ìƒìˆ˜ì˜ ë³€ìˆ˜ëª…ì€ ëª¨ë‘ ëŒ€ë¬¸ìë¡œ ì‚¬ìš©, ë‹¨ì–´+ë‹¨ì–´ = ë‹¨ì–´_ë‹¨ì–´
     final static int SERVER_PORT = 1225;
-    //»ç¿ëÇÏÁö ¾Ê´Â Æ÷Æ®¸¦ ½á¾ßÇÑ´Ù. ¾Æ´Ò°æ¿ì Ãæµ¹ ¹ß»ı
-    //½ÇÇà:"cmd"¿¡¼­ "netstat -nao"ÀÔ·ÂÇØ¼­ »ç¿ëÁßÀÎ Æ÷Æ®&¾ÆÀÌµğ È®ÀÎ
-    final static String MESSAGE_TO_SERVER = "¾È³ç,³Í ¸î¹øÀÌ³Ä?";
+    //ì‚¬ìš©í•˜ì§€ ì•ŠëŠ” í¬íŠ¸ë¥¼ ì¨ì•¼í•œë‹¤. ì•„ë‹ê²½ìš° ì¶©ëŒ ë°œìƒ
+    //ì‹¤í–‰:"cmd"ì—ì„œ "netstat -nao"ì…ë ¥í•´ì„œ ì‚¬ìš©ì¤‘ì¸ í¬íŠ¸&ì•„ì´ë”” í™•ì¸
+    final static String MESSAGE_TO_SERVER = "ì•ˆë…•,ë„Œ ëª‡ë²ˆì´ëƒ?";
      
     public static void main(String[] args) {
          
         Socket socket = null;
-        //Å¬¶óÀÌ¾ğÆ® ¼ÒÄÏÀ» ¼±¾ğÇÔ. ¸¸µé¾îÁöÁö´Â ¾ÊÀ½
+        //í´ë¼ì´ì–¸íŠ¸ ì†Œì¼“ì„ ì„ ì–¸í•¨. ë§Œë“¤ì–´ì§€ì§€ëŠ” ì•ŠìŒ
          
         try {
-            /** ¼ÒÄÏÅë½Å ½ÃÀÛ */
+            /** ì†Œì¼“í†µì‹  ì‹œì‘ */
             socket = new Socket(SERVER_IP,SERVER_PORT);
-            //»ó¼ö¿¡ ¸¶¿ì½º¸¦ ¿Ã¸®¸é surround with try/catchÀÛ¼º°¡´É
-            //¼ÒÄÏÀ» ¸¸µé°Ú´Ù, ¼ÒÄÏÀ» ¿­¾úÀ½
-            //try = ¿¹¿ÜÃ³¸®, Åë½ÅÀÌ ¾ÈµÉ ¼öµµ ÀÖÀ¸¹Ç·Î ÀÛ¼º
-            System.out.println("socket ¿¬°á");
+            //ìƒìˆ˜ì— ë§ˆìš°ìŠ¤ë¥¼ ì˜¬ë¦¬ë©´ surround with try/catchì‘ì„±ê°€ëŠ¥
+            //ì†Œì¼“ì„ ë§Œë“¤ê² ë‹¤, ì†Œì¼“ì„ ì—´ì—ˆìŒ
+            //try = ì˜ˆì™¸ì²˜ë¦¬, í†µì‹ ì´ ì•ˆë  ìˆ˜ë„ ìˆìœ¼ë¯€ë¡œ ì‘ì„±
+            System.out.println("socket ì—°ê²°");
          
-            /** Client¿¡¼­ Server·Î º¸³»±â À§ÇÑ Åë·Î */
+            /** Clientì—ì„œ Serverë¡œ ë³´ë‚´ê¸° ìœ„í•œ í†µë¡œ */
             OutputStream os = socket.getOutputStream();
-            /** Server¿¡¼­ º¸³½ °ªÀ» ¹Ş±â À§ÇÑ Åë·Î */
+            /** Serverì—ì„œ ë³´ë‚¸ ê°’ì„ ë°›ê¸° ìœ„í•œ í†µë¡œ */
             InputStream is = socket.getInputStream();
              
             os.write( MESSAGE_TO_SERVER.getBytes() );
@@ -44,7 +44,7 @@ public class Client {
             os.close();
             
             socket.close();
-            //¼ÒÄÏÀ» ¿­¾úÀ¸¸é Ç×»ó ´İ¾ÆÁà¾ßÇÔ
+            //ì†Œì¼“ì„ ì—´ì—ˆìœ¼ë©´ í•­ìƒ ë‹«ì•„ì¤˜ì•¼í•¨
         } catch (UnknownHostException e) {
             e.printStackTrace();
         } catch (IOException e) {

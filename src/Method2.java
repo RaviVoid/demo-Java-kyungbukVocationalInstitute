@@ -1,7 +1,7 @@
 
 public class Method2 {
 
-	public static void aaa() {// ¸¶¹æÁø 5x5ÀÇ °úÁ¤À» ÇÔ¼öÈ­ ½ÃÅ´
+	public static void aaa() {// ë§ˆë°©ì§„ 5x5ì˜ ê³¼ì •ì„ í•¨ìˆ˜í™” ì‹œí‚´
 		int[][] arr = { { 11, 18, 25, 2, 9 }, { 10, 12, 19, 21, 3 }, { 4, 6, 13, 20, 22 }, { 23, 5, 7, 14, 16 },
 				{ 17, 24, 1, 8, 15 } };
 //1
@@ -12,11 +12,11 @@ public class Method2 {
 			}
 		}
 		if (rowCntChk != (65 * 5)) {
-			System.out.println("¿À´ä");
+			System.out.println("ì˜¤ë‹µ");
 			return;
 		}
 		int colCntChk = 0;
-//¼¼·Î°ª 15Ã¼Å©
+//ì„¸ë¡œê°’ 15ì²´í¬
 		for (int i = 0; i < arr.length; i++) {
 
 			for (int j = 0; j < arr[i].length; j++) {
@@ -24,7 +24,7 @@ public class Method2 {
 			}
 		}
 		if (colCntChk != (65 * 5)) {
-			System.out.println("¿À´ä");
+			System.out.println("ì˜¤ë‹µ");
 			return;
 		}
 		int leftTop = 0;
@@ -36,7 +36,7 @@ public class Method2 {
 			}
 		}
 		if (leftTop != 65) {
-			System.out.println("¿À´ä");
+			System.out.println("ì˜¤ë‹µ");
 			return;
 		}
 		int rightTop = 0;
@@ -49,14 +49,14 @@ public class Method2 {
 			}
 		}
 		if (rightTop != 65) {
-			System.out.println("¿À´ä");
+			System.out.println("ì˜¤ë‹µ");
 			return;
 		}
-		System.out.println("Á¤´äÀÔ´Ï´Ù.ÃàÇÏÃàÇÏ");
+		System.out.println("ì •ë‹µì…ë‹ˆë‹¤.ì¶•í•˜ì¶•í•˜");
 	}
 
 	public static void main(String[] args) {
-		aaa(); // ¸¶¹æÁø 5x5ÀÇ ÇÔ¼ö aaa()¸¦ È£Ãâ
+		aaa(); // ë§ˆë°©ì§„ 5x5ì˜ í•¨ìˆ˜ aaa()ë¥¼ í˜¸ì¶œ
 	}
 
 }

@@ -2,31 +2,31 @@
 public class ArrayExam {
 
 	public static void main(String[] args) {
-		/** ÂüÁ¶Çü º¯¼ö
-		¹è¿­
-		Å¸ÀÔ[] º¯¼ö¸í ;
-		Å¸ÀÔ º¯¼ö¸í[];
-		int[] j = new int[2]; //2Ä­Â¥¸® °¢4¹ÙÀÌÆ®ÀÇ °ø°£ÀÌ ¸¸µé¾îÁø´Ù
+		/** ì°¸ì¡°í˜• ë³€ìˆ˜
+		ë°°ì—´
+		íƒ€ì…[] ë³€ìˆ˜ëª… ;
+		íƒ€ì… ë³€ìˆ˜ëª…[];
+		int[] j = new int[2]; //2ì¹¸ì§œë¦¬ ê°4ë°”ì´íŠ¸ì˜ ê³µê°„ì´ ë§Œë“¤ì–´ì§„ë‹¤
 		**/
 		ArrayExam ae = new ArrayExam();
 		
-		System.out.println(ae); //¸Ş¸ğ¸®»óÀÇ ÇØ½¬ÄÚµå °ªÀ» Ãâ·Â
-		System.out.println("=============="); //±¸ºĞ¼±
+		System.out.println(ae); //ë©”ëª¨ë¦¬ìƒì˜ í•´ì‰¬ì½”ë“œ ê°’ì„ ì¶œë ¥
+		System.out.println("=============="); //êµ¬ë¶„ì„ 
 		
-		System.out.println("=======½Ç½À½ÃÀÛ======="); //±¸ºĞ¼±		
+		System.out.println("=======ì‹¤ìŠµì‹œì‘======="); //êµ¬ë¶„ì„ 		
 		int [] j = new int[3];
 		double [] k = new double[3];
 		char [] l = new char[3];
 		
-		System.out.println(j); //ÇØ½¬ÄÚµå °ªÀ» Ãâ·Â
-		System.out.println(j[0]+j[1]+j[2]); //intÀÇ ±âº»°ªÀÌ 0ÀÎ°ÍÀ» È®ÀÎ
-		System.out.println(k[0]+k[1]+k[2]); //doubleÀÇ ±âº»°ªÀÌ 0.0ÀÎ°ÍÀ» È®ÀÎ
-		System.out.println(l[0]+l[1]+l[2]); //charÀÇ ±âº»°ªÀÌ voidÀÎ°ÍÀ» È®ÀÎ
-		System.out.println("=============="); //±¸ºĞ¼±
+		System.out.println(j); //í•´ì‰¬ì½”ë“œ ê°’ì„ ì¶œë ¥
+		System.out.println(j[0]+j[1]+j[2]); //intì˜ ê¸°ë³¸ê°’ì´ 0ì¸ê²ƒì„ í™•ì¸
+		System.out.println(k[0]+k[1]+k[2]); //doubleì˜ ê¸°ë³¸ê°’ì´ 0.0ì¸ê²ƒì„ í™•ì¸
+		System.out.println(l[0]+l[1]+l[2]); //charì˜ ê¸°ë³¸ê°’ì´ voidì¸ê²ƒì„ í™•ì¸
+		System.out.println("=============="); //êµ¬ë¶„ì„ 
 		
-		j[0] = 10; //j[0]¹øÂ° Ä­¿¡ 10À» ÀÔ·Â
-		System.out.println(j[0]); //j[0]¹øÂ° Ä­ÀÇ °ªÀ» Ãâ·Â
-		System.out.println("=============="); //±¸ºĞ¼±
+		j[0] = 10; //j[0]ë²ˆì§¸ ì¹¸ì— 10ì„ ì…ë ¥
+		System.out.println(j[0]); //j[0]ë²ˆì§¸ ì¹¸ì˜ ê°’ì„ ì¶œë ¥
+		System.out.println("=============="); //êµ¬ë¶„ì„ 
 		
 		int [] m = {10,20,30};
 		System.out.println(m[0]);

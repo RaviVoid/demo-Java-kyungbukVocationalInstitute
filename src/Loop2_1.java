@@ -1,7 +1,7 @@
 /**
- * ¹Ýº¹¹® for¹® for(ÃÊ±â°ª;Á¶°Ç¹®;Áõ°¨½Ä){¼öÇà¹®} while¹® {ÃÊ±â°ª; while(Á¶°Ç¹®){¼öÇà¹®;Áõ°¨½Ä} do~while¹®
- * ÃÊ±â°ª; do{¼öÇà¹®;Áõ°¨½Ä(»ý·«°¡´É);}while(Á¶°Ç¹®); do~while¹®Àº ³¡¿¡ ";"¼¼¹ÌÄÝ·ÐÀÌ ºÙ´Â´Ù 1~10±îÁö °è»ê°úÁ¤À»
- * Ãâ·ÂÇØ¶ó 1~10±îÁö ÃÑÇÕÀ» Ãâ·ÂÇØ¶ó
+ * ë°˜ë³µë¬¸ forë¬¸ for(ì´ˆê¸°ê°’;ì¡°ê±´ë¬¸;ì¦ê°ì‹){ìˆ˜í–‰ë¬¸} whileë¬¸ {ì´ˆê¸°ê°’; while(ì¡°ê±´ë¬¸){ìˆ˜í–‰ë¬¸;ì¦ê°ì‹} do~whileë¬¸
+ * ì´ˆê¸°ê°’; do{ìˆ˜í–‰ë¬¸;ì¦ê°ì‹(ìƒëžµê°€ëŠ¥);}while(ì¡°ê±´ë¬¸); do~whileë¬¸ì€ ëì— ";"ì„¸ë¯¸ì½œë¡ ì´ ë¶™ëŠ”ë‹¤ 1~10ê¹Œì§€ ê³„ì‚°ê³¼ì •ì„
+ * ì¶œë ¥í•´ë¼ 1~10ê¹Œì§€ ì´í•©ì„ ì¶œë ¥í•´ë¼
  * 
  * @author smart04
  *
@@ -13,13 +13,13 @@ public class Loop2_1 {
 			int sum = 0;
 			int i = 1;
 			while (i <= 10) {
-				System.out.printf("Áö±ÝÀº %d¹ø ÀÌ´Ù.\n", i);
+				System.out.printf("ì§€ê¸ˆì€ %dë²ˆ ì´ë‹¤.\n", i);
 				sum = sum + i;
 				i++;
 
-				System.out.printf("Áö±Ý±îÁö ¼Ò°è´Â?\n %dÀÌ´Ù.\n", sum);
+				System.out.printf("ì§€ê¸ˆê¹Œì§€ ì†Œê³„ëŠ”?\n %dì´ë‹¤.\n", sum);
 			}
-			System.out.printf("Áö±Ý±îÁö ÃÑ ÇÕÀº %d ÀÌ´Ù.", sum);
+			System.out.printf("ì§€ê¸ˆê¹Œì§€ ì´ í•©ì€ %d ì´ë‹¤.", sum);
 		}
 	}
 }

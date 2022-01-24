@@ -1,5 +1,5 @@
 /**
- * ¹®ÀÚ¿­ String Å¬·¡½º
+ * ë¬¸ìì—´ String í´ë˜ìŠ¤
  * 
  * @author smart04
  *
@@ -7,18 +7,18 @@
 public class StringExam {
 
 	public static void main(String[] args) {
-		// char[] c = {'A','B'} //¹®¹ı ¼³¸í : Ä³¸¯ÅÍ¹è¿­
-		// char c = 'A'; //¹®¹ı ¼³¸í : Ä³¸¯ÅÍ¹è¿­
-		// String Å¬·¡½º´Â ¹®ÀÚ¿­À» Ã³¸®ÇØÁØ´Ù
-		// String s; //º¯¼ö¼±¾ğ : ¹®ÀÚ¿­ s°¡ ¸¸µé¾îÁø´Ù
-		// s = new String(); //ÀÚ¸´¼ö´Â °ª ³Ö´Â´ë·Î Ä­ÀÌ ´Ã¾î³­´Ù
+		// char[] c = {'A','B'} //ë¬¸ë²• ì„¤ëª… : ìºë¦­í„°ë°°ì—´
+		// char c = 'A'; //ë¬¸ë²• ì„¤ëª… : ìºë¦­í„°ë°°ì—´
+		// String í´ë˜ìŠ¤ëŠ” ë¬¸ìì—´ì„ ì²˜ë¦¬í•´ì¤€ë‹¤
+		// String s; //ë³€ìˆ˜ì„ ì–¸ : ë¬¸ìì—´ sê°€ ë§Œë“¤ì–´ì§„ë‹¤
+		// s = new String(); //ìë¦¿ìˆ˜ëŠ” ê°’ ë„£ëŠ”ëŒ€ë¡œ ì¹¸ì´ ëŠ˜ì–´ë‚œë‹¤
 
 		String s1, s2;
 		
 		
-		s1 = new String("ABC"); //s1ÀÇ ¹®ÀÚ¿­ º¯¼ö¿¡ ABC°ªÀ» ´ëÀÔÇÑ´Ù.
-		s2 = "123"; //¹®¹ı»ó new StringÀ» »ı·«ÇÒ ¼öµµ ÀÖ´Ù.
-				System.out.printf("s1 = %s(new String »ç¿ë)\ns2 = %s(new String »ı·«)", s1, s2);
+		s1 = new String("ABC"); //s1ì˜ ë¬¸ìì—´ ë³€ìˆ˜ì— ABCê°’ì„ ëŒ€ì…í•œë‹¤.
+		s2 = "123"; //ë¬¸ë²•ìƒ new Stringì„ ìƒëµí•  ìˆ˜ë„ ìˆë‹¤.
+				System.out.printf("s1 = %s(new String ì‚¬ìš©)\ns2 = %s(new String ìƒëµ)", s1, s2);
 				
 	}
 	

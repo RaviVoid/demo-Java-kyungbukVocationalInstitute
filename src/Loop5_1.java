@@ -1,7 +1,7 @@
 /**
- * ¹Ýº¹¹® for¹® for(ÃÊ±â°ª;Á¶°Ç¹®;Áõ°¨½Ä){¼öÇà¹®} while¹® {ÃÊ±â°ª; while(Á¶°Ç¹®){¼öÇà¹®;Áõ°¨½Ä} do~while¹®
- * ÃÊ±â°ª; do{¼öÇà¹®;Áõ°¨½Ä(»ý·«°¡´É);}while(Á¶°Ç¹®); do~while¹®Àº ³¡¿¡ ";"¼¼¹ÌÄÝ·ÐÀÌ ºÙ´Â´Ù. 2022³â 1¿ù´Þ ÀÏÀÚ¸¦
- * Ãâ·ÂÇÏ½Ã¿À(1~31) ¹Ýº¹ÇØ¼­ Ãâ·ÂÇØº¸¼¼¿ä
+ * ë°˜ë³µë¬¸ forë¬¸ for(ì´ˆê¸°ê°’;ì¡°ê±´ë¬¸;ì¦ê°ì‹){ìˆ˜í–‰ë¬¸} whileë¬¸ {ì´ˆê¸°ê°’; while(ì¡°ê±´ë¬¸){ìˆ˜í–‰ë¬¸;ì¦ê°ì‹} do~whileë¬¸
+ * ì´ˆê¸°ê°’; do{ìˆ˜í–‰ë¬¸;ì¦ê°ì‹(ìƒëžµê°€ëŠ¥);}while(ì¡°ê±´ë¬¸); do~whileë¬¸ì€ ëì— ";"ì„¸ë¯¸ì½œë¡ ì´ ë¶™ëŠ”ë‹¤. 2022ë…„ 1ì›”ë‹¬ ì¼ìžë¥¼
+ * ì¶œë ¥í•˜ì‹œì˜¤(1~31) ë°˜ë³µí•´ì„œ ì¶œë ¥í•´ë³´ì„¸ìš”
  * 
  * @author smart04
  *
@@ -9,10 +9,10 @@
 public class Loop5_1 {
 
 	public static void main(String[] args) {
-		int year = 2022; // ³âµµ ÀÔ·Â
-		System.out.printf("¿ÃÇØ´Â %d³â ÀÔ´Ï´Ù.\n", year);
+		int year = 2022; // ë…„ë„ ìž…ë ¥
+		System.out.printf("ì˜¬í•´ëŠ” %dë…„ ìž…ë‹ˆë‹¤.\n", year);
 		int month = 1;
-		while (month <= 12) { // ¿ù Ä«¿îÆÃ
+		while (month <= 12) { // ì›” ì¹´ìš´íŒ…
 			int lastDayOfMonth = 0;
 			switch (month) {
 			case 1:
@@ -31,10 +31,10 @@ public class Loop5_1 {
 				lastDayOfMonth = 30;
 				break;
 			}
-			System.out.printf("\nÀÌ´ÞÀº %d¿ù ÀÔ´Ï´Ù.--------------------------\n", month);
+			System.out.printf("\nì´ë‹¬ì€ %dì›” ìž…ë‹ˆë‹¤.--------------------------\n", month);
 
 			{
-				System.out.printf("%d¿ùÀº ¾Æ·¡¿Í °°½À´Ï´Ù\n", month);
+				System.out.printf("%dì›”ì€ ì•„ëž˜ì™€ ê°™ìŠµë‹ˆë‹¤\n", month);
 				for (int date = 1; date <= lastDayOfMonth; date++) {
 					System.out.printf(" %d", date);
 				}

@@ -1,5 +1,5 @@
 /**
- * Á¦¾î¹®
+ * ì œì–´ë¬¸
  * 
  * @author smart04
  *
@@ -7,60 +7,60 @@
 public class ControlFlow {
 
 	public static void main(String[] args) {
-		// if¹®(println»ç¿ë)
-		System.out.println("if¹®println=======");
+		// ifë¬¸(printlnì‚¬ìš©)
+		System.out.println("ifë¬¸println=======");
 		{
 			int i = 4;
 			if (i > 5) {
-				System.out.println(i + "Àº(´Â) 5º¸´Ù Å®´Ï´Ù");
+				System.out.println(i + "ì€(ëŠ”) 5ë³´ë‹¤ í½ë‹ˆë‹¤");
 			}
 			if (i == 5) {
-				System.out.println(i + "Àº(´Â) 5¶û °°½À´Ï´Ù");
+				System.out.println(i + "ì€(ëŠ”) 5ë‘ ê°™ìŠµë‹ˆë‹¤");
 			}
 			if (i < 5) {
-				System.out.println(i + "Àº(´Â) 5º¸´Ù ÀÛ½À´Ï´Ù");
+				System.out.println(i + "ì€(ëŠ”) 5ë³´ë‹¤ ì‘ìŠµë‹ˆë‹¤");
 			}
 		}
-		// if¹®(printf»ç¿ë)
-		System.out.println("if¹®printf=======");
+		// ifë¬¸(printfì‚¬ìš©)
+		System.out.println("ifë¬¸printf=======");
 		{
 			int i = 4;
 			if (i > 5) {
-				System.out.printf("%dÀº(´Â) 5º¸´Ù Å®´Ï´Ù\n", i);
+				System.out.printf("%dì€(ëŠ”) 5ë³´ë‹¤ í½ë‹ˆë‹¤\n", i);
 			}
 			if (i == 5) {
-				System.out.printf("%dÀº(´Â) 5¶û °°½À´Ï´Ù\n", i);
+				System.out.printf("%dì€(ëŠ”) 5ë‘ ê°™ìŠµë‹ˆë‹¤\n", i);
 			}
 			if (i < 5) {
-				System.out.printf("%dÀº(´Â) 5º¸´Ù ÀÛ½À´Ï´Ù\n", i);
+				System.out.printf("%dì€(ëŠ”) 5ë³´ë‹¤ ì‘ìŠµë‹ˆë‹¤\n", i);
 			}
 		}
-		// if/else¹®
-		System.out.println("if/else¹®=======");
+		// if/elseë¬¸
+		System.out.println("if/elseë¬¸=======");
 		{
 			int i = 4;
 			if (i > 5) {
-				System.out.printf("%dÀº(´Â) 5º¸´Ù Å®´Ï´Ù\n", i);
+				System.out.printf("%dì€(ëŠ”) 5ë³´ë‹¤ í½ë‹ˆë‹¤\n", i);
 			} else {
 
 				if (i == 5) {
-					System.out.printf("%dÀº(´Â) 5¶û °°½À´Ï´Ù\n", i);
+					System.out.printf("%dì€(ëŠ”) 5ë‘ ê°™ìŠµë‹ˆë‹¤\n", i);
 				}
 				if (i < 5) {
-					System.out.printf("%dÀº(´Â) 5º¸´Ù ÀÛ½À´Ï´Ù\n", i);
+					System.out.printf("%dì€(ëŠ”) 5ë³´ë‹¤ ì‘ìŠµë‹ˆë‹¤\n", i);
 				}
 			}
 		}
-		// if/else if¹®
-		System.out.println("if/else if¹®=======");
+		// if/else ifë¬¸
+		System.out.println("if/else ifë¬¸=======");
 		{
 			int i = 4;
 			if (i > 5) {
-				System.out.printf("%dÀº(´Â) 5º¸´Ù Å®´Ï´Ù\n", i);
+				System.out.printf("%dì€(ëŠ”) 5ë³´ë‹¤ í½ë‹ˆë‹¤\n", i);
 			} else if (i == 5) {
-				System.out.printf("%dÀº(´Â) 5¶û °°½À´Ï´Ù\n", i);
+				System.out.printf("%dì€(ëŠ”) 5ë‘ ê°™ìŠµë‹ˆë‹¤\n", i);
 			} else {
-				System.out.printf("%dÀº(´Â) 5º¸´Ù ÀÛ½À´Ï´Ù\n", i);
+				System.out.printf("%dì€(ëŠ”) 5ë³´ë‹¤ ì‘ìŠµë‹ˆë‹¤\n", i);
 
 			}
 		}

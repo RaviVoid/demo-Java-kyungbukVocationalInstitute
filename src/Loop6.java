@@ -1,6 +1,6 @@
 /**
- * ¹İº¹¹® for¹® for(ÃÊ±â°ª;Á¶°Ç¹®;Áõ°¨½Ä){¼öÇà¹®} while¹® {ÃÊ±â°ª; while(Á¶°Ç¹®){¼öÇà¹®;Áõ°¨½Ä} do~while¹®
- * ÃÊ±â°ª; do{¼öÇà¹®;Áõ°¨½Ä(»ı·«°¡´É);}while(Á¶°Ç¹®); do~while¹®Àº ³¡¿¡ ";"¼¼¹ÌÄİ·ĞÀÌ ºÙ´Â´Ù. ÇöÀç½Ã°£À» Ãâ·ÂÇØº¸¼¼¿ä
+ * ë°˜ë³µë¬¸ forë¬¸ for(ì´ˆê¸°ê°’;ì¡°ê±´ë¬¸;ì¦ê°ì‹){ìˆ˜í–‰ë¬¸} whileë¬¸ {ì´ˆê¸°ê°’; while(ì¡°ê±´ë¬¸){ìˆ˜í–‰ë¬¸;ì¦ê°ì‹} do~whileë¬¸
+ * ì´ˆê¸°ê°’; do{ìˆ˜í–‰ë¬¸;ì¦ê°ì‹(ìƒëµê°€ëŠ¥);}while(ì¡°ê±´ë¬¸); do~whileë¬¸ì€ ëì— ";"ì„¸ë¯¸ì½œë¡ ì´ ë¶™ëŠ”ë‹¤. í˜„ì¬ì‹œê°„ì„ ì¶œë ¥í•´ë³´ì„¸ìš”
  * 
  * @author smart04
  *
@@ -8,18 +8,18 @@
 public class Loop6 {
 
 	public static void main(String[] args) {
-		int hour = 0, min = 0, sec = 0; // ½Ãhour,ºĞmin,ÃÊsec º¯¼öÁöÁ¤
-		hour = 14; // ½Ã°£ ÀÔ·Â
-		min = 20; // ºĞ ÀÔ·Â
-		sec = 3; // ÃÊ ÀÔ·Â
+		int hour = 0, min = 0, sec = 0; // ì‹œhour,ë¶„min,ì´ˆsec ë³€ìˆ˜ì§€ì •
+		hour = 14; // ì‹œê°„ ì…ë ¥
+		min = 20; // ë¶„ ì…ë ¥
+		sec = 3; // ì´ˆ ì…ë ¥
 		int sumSec = (hour * 60 * 60) + (min * 60) + (sec);
 
 		sumSec++;
 
-		System.out.println(sumSec); // ¿ÀÈÄ2½Ã 20ºĞ¿¡ ÇØ´çÇÏ´Â ÀüÃ¼ÃÊ
-		System.out.println(sumSec / (60 * 60)); // ÇöÀç ½Ã°£ 14
-		System.out.println((sumSec / (60)) % 60); // ÇöÀç ºĞ 1203
-		System.out.println(sumSec % (60)); // ÇöÀç ÃÊ
+		System.out.println(sumSec); // ì˜¤í›„2ì‹œ 20ë¶„ì— í•´ë‹¹í•˜ëŠ” ì „ì²´ì´ˆ
+		System.out.println(sumSec / (60 * 60)); // í˜„ì¬ ì‹œê°„ 14
+		System.out.println((sumSec / (60)) % 60); // í˜„ì¬ ë¶„ 1203
+		System.out.println(sumSec % (60)); // í˜„ì¬ ì´ˆ
 
 		for (;;) {
 

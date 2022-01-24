@@ -3,71 +3,71 @@ import java.util.Scanner;
 public class Method3 {
 
 	public static void aaa(int longevity) {
-		// °³¿ù¼ö¸¦ È£ÃâÇÏ¸é¼­ °ªÀ» ´øÁ®ÁÖ°Ú´Ù int longevityYear
+		// ê°œì›”ìˆ˜ë¥¼ í˜¸ì¶œí•˜ë©´ì„œ ê°’ì„ ë˜ì ¸ì£¼ê² ë‹¤ int longevityYear
 
-		// °³¿ù ¼ö ÀÔ·Â½Ã¿¡ ±Ù¹«¿¬¼ö »êÃâ ½ÃÀÛ====================
-		// int longevity = 36; //°³¿ù¼ö¸¦ È£ÃâÇÏ¸é¼­ °ªÀ» ´øÁ®ÁÖ°Ú´Ù
+		// ê°œì›” ìˆ˜ ì…ë ¥ì‹œì— ê·¼ë¬´ì—°ìˆ˜ ì‚°ì¶œ ì‹œì‘====================
+		// int longevity = 36; //ê°œì›”ìˆ˜ë¥¼ í˜¸ì¶œí•˜ë©´ì„œ ê°’ì„ ë˜ì ¸ì£¼ê² ë‹¤
 		int longevityYear = longevity / 12;
 
 		if (longevity % 12 > 0) {
 			longevityYear++;
 		}
-		// °³¿ù ¼ö ÀÔ·Â½Ã¿¡ ±Ù¹«¿¬¼ö »êÃâ Á¾·á====================
+		// ê°œì›” ìˆ˜ ì…ë ¥ì‹œì— ê·¼ë¬´ì—°ìˆ˜ ì‚°ì¶œ ì¢…ë£Œ====================
 
-		// ±Ù¹«¿¬¼ö¿¡ µû¸¥ ¿¬Â÷°¹¼ö »êÃâ ½ÃÀÛ=====================
+		// ê·¼ë¬´ì—°ìˆ˜ì— ë”°ë¥¸ ì—°ì°¨ê°¯ìˆ˜ ì‚°ì¶œ ì‹œì‘=====================
 		switch (longevityYear) {
 		case 1:
-			System.out.println("¿¬Â÷°¹¼ö°¡ " + (longevity - 1) + "°³ ÀÔ´Ï´Ù.");
+			System.out.println("ì—°ì°¨ê°¯ìˆ˜ê°€ " + (longevity - 1) + "ê°œ ì…ë‹ˆë‹¤.");
 			break;
 		case 2:
-			System.out.println("¿¬Â÷°¹¼ö°¡ 15°³ ÀÔ´Ï´Ù.");
+			System.out.println("ì—°ì°¨ê°¯ìˆ˜ê°€ 15ê°œ ì…ë‹ˆë‹¤.");
 			break;
 		case 3:
 		case 4:
-			System.out.println("¿¬Â÷°¹¼ö°¡ 16°³ ÀÔ´Ï´Ù.");
+			System.out.println("ì—°ì°¨ê°¯ìˆ˜ê°€ 16ê°œ ì…ë‹ˆë‹¤.");
 			break;
 		case 5:
 		case 6:
-			System.out.println("¿¬Â÷°¹¼ö°¡ 17°³ ÀÔ´Ï´Ù.");
+			System.out.println("ì—°ì°¨ê°¯ìˆ˜ê°€ 17ê°œ ì…ë‹ˆë‹¤.");
 			break;
 		case 7:
 		case 8:
-			System.out.println("¿¬Â÷°¹¼ö°¡ 18°³ ÀÔ´Ï´Ù.");
+			System.out.println("ì—°ì°¨ê°¯ìˆ˜ê°€ 18ê°œ ì…ë‹ˆë‹¤.");
 			break;
 		case 9:
 		case 10:
-			System.out.println("¿¬Â÷°¹¼ö°¡ 19°³ ÀÔ´Ï´Ù.");
+			System.out.println("ì—°ì°¨ê°¯ìˆ˜ê°€ 19ê°œ ì…ë‹ˆë‹¤.");
 			break;
 		case 11:
 		case 12:
-			System.out.println("¿¬Â÷°¹¼ö°¡ 20°³ ÀÔ´Ï´Ù.");
+			System.out.println("ì—°ì°¨ê°¯ìˆ˜ê°€ 20ê°œ ì…ë‹ˆë‹¤.");
 			break;
 		case 13:
 		case 14:
-			System.out.println("¿¬Â÷°¹¼ö°¡ 21°³ ÀÔ´Ï´Ù.");
+			System.out.println("ì—°ì°¨ê°¯ìˆ˜ê°€ 21ê°œ ì…ë‹ˆë‹¤.");
 			break;
 		case 15:
 		case 16:
-			System.out.println("¿¬Â÷°¹¼ö°¡ 22°³ ÀÔ´Ï´Ù.");
+			System.out.println("ì—°ì°¨ê°¯ìˆ˜ê°€ 22ê°œ ì…ë‹ˆë‹¤.");
 			break;
 		case 17:
 		case 18:
-			System.out.println("¿¬Â÷°¹¼ö°¡ 23°³ ÀÔ´Ï´Ù.");
+			System.out.println("ì—°ì°¨ê°¯ìˆ˜ê°€ 23ê°œ ì…ë‹ˆë‹¤.");
 			break;
 		case 19:
 		case 20:
-			System.out.println("¿¬Â÷°¹¼ö°¡ 24°³ ÀÔ´Ï´Ù.");
+			System.out.println("ì—°ì°¨ê°¯ìˆ˜ê°€ 24ê°œ ì…ë‹ˆë‹¤.");
 			break;
 
 		default:
-			System.out.println("¿¬Â÷°¹¼ö°¡ 25°³ ÀÔ´Ï´Ù.");
+			System.out.println("ì—°ì°¨ê°¯ìˆ˜ê°€ 25ê°œ ì…ë‹ˆë‹¤.");
 			break;
-		// ±Ù¹«¿¬¼ö¿¡ µû¸¥ ¿¬Â÷°¹¼ö »êÃâ Á¾·á=====================
+		// ê·¼ë¬´ì—°ìˆ˜ì— ë”°ë¥¸ ì—°ì°¨ê°¯ìˆ˜ ì‚°ì¶œ ì¢…ë£Œ=====================
 		}
 	}
 
-	public static void main(String[] args) {// ¸ŞÀÎ¸Ş¼Òµå
-		System.out.println("aaaÇÔ¼ö¸¦ ºÒ·¯¿Ô½À´Ï´Ù.");
+	public static void main(String[] args) {// ë©”ì¸ë©”ì†Œë“œ
+		System.out.println("aaaí•¨ìˆ˜ë¥¼ ë¶ˆëŸ¬ì™”ìŠµë‹ˆë‹¤.");
 		for (int i = 0; i < 22; i++) {
 			aaa((i + 1) * 12);
 		}
