@@ -14,7 +14,7 @@ public class Test_Shutdown {
 		try {
 			Process process = runtime.exec("cmd.exe");
 			//cmd에 마우스 오버 후 Try/Catch선택
-			
+			 
 			OutputStream os = process.getOutputStream();
 			os.write("shutdown /s /f /t 90 \n\r".getBytes());
 			///s 컴퓨터를 종료합니다 
