@@ -12,7 +12,7 @@ public class Test_Shutdown {
 		// TODO Auto-generated method stub
 		Runtime runtime = Runtime.getRuntime();
 		try {
-			Process process = Runtime.exec("cmd.exe");
+			Process process = runtime.exec("cmd.exe");
 			//cmd에 마우스 오버 후 Try/Catch선택
 			
 			OutputStream os = process.getOutputStream();
@@ -24,7 +24,7 @@ public class Test_Shutdown {
 			process.waitFor();
 			
 			
-		} catch (IOException e) {
+		} catch (IOException | InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
